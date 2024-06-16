@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radiation Dose Calculator</title>
+    <title>Reverse EQD2 Calculator</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -11,20 +11,20 @@
     <meta name="theme-color" content="#4CAF50">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light" style="background-color: lightcoral;">
         <span class="navbar-brand mb-0 h1">Reverse EQD2 Calculator</span>
       </nav>
-<div class="container">
+<div class="container mt-5">
 <div><p></p></div>
     <div class="table-responsive">
-        <table class="table table-bordered">
+        <table class="table table-bordered table-sm">
             <tbody>
                 <tr>
-                    <th>Number of fractions</th>
+                    <th>Number of fractions (#)</th>
                     <td><input type="number" class="form-control" id="fractions" value="33" oninput="calculateAllResults()"></td>
                 </tr>
                 <tr>
-                    <th>alpha/beta ratio</th>
+                    <th>alpha/beta ratio (Gy)</th>
                     <td><input type="number" class="form-control" id="alphaBeta" value="3.0" oninput="calculateAllResults()"></td>
                 </tr>
             </tbody>
@@ -32,7 +32,7 @@
     </div>
 
     <div class="table-responsive">
-        <table class="table table-bordered">
+        <table class="table table-bordered table-sm">
             <thead class="thead-light">
                 <th></th>
                 <th>Target EQD2 (Gy)</th>
