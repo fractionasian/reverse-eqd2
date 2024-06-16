@@ -1,0 +1,12 @@
+{
+    "short_name": "Reverse EQD2",
+    "name": "Reverse EQD2 Calculator",
+
+    "start_url": ".",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "lightcoral",
+
+    "description": "A webapp for calculating dose required for a given EQD2",
+
+  }
