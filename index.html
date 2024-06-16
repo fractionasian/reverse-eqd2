@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiation Dose Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+
+<div class="container">
+    <h2 class="text-center mb-4">EQD2 Calculator</h2>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                    <th>EQD2 (Gy)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Number of fractions:</td>
+                    <td><input type="number" class="form-control" id="fractions" value="35" oninput="calculateAllResults()"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>alpha/beta ratio:</td>
+                    <td><input type="number" class="form-control" id="alphaBeta" value="3.0" oninput="calculateAllResults()"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>High dose:</td>
+                    <td><input type="number" class="form-control" id="highDose" value="70" oninput="calculateHighDose()"></td>
+                    <td id="highDoseResult"></td>
+                </tr>
+                <tr>
+                    <td>Intermediate dose:</td>
+                    <td><input type="number" class="form-control" id="intermediateDose" value="63" oninput="calculateIntermediateDose()"></td>
+                    <td id="intermediateDoseResult"></td>
+                </tr>
+                <tr>
+                    <td>Low dose:</td>
+                    <td><input type="number" class="form-control" id="lowDose" value="56" oninput="calculateLowDose()"></td>
+                    <td id="lowDoseResult"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Bootstrap JS (Optional, for Bootstrap components like modals, tooltips, etc.) -->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+<script src="script.js"></script>
+</body>
+</html>
