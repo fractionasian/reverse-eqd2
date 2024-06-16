@@ -11,47 +11,56 @@
     <meta name="theme-color" content="#4CAF50">
 </head>
 <body>
-
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Reverse EQD2 Calculator</span>
+      </nav>
 <div class="container">
-    <h2 class="text-center mb-4">EQD2 Calculator</h2>
+<div><p></p></div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th>Number of fractions</th>
+                    <td><input type="number" class="form-control" id="fractions" value="33" oninput="calculateAllResults()"></td>
+                </tr>
+                <tr>
+                    <th>alpha/beta ratio</th>
+                    <td><input type="number" class="form-control" id="alphaBeta" value="3.0" oninput="calculateAllResults()"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
     <div class="table-responsive">
         <table class="table table-bordered">
             <thead class="thead-light">
-                <tr>
-                    <th>Parameter</th>
-                    <th>Value</th>
-                    <th>EQD2 (Gy)</th>
-                </tr>
+                <th></th>
+                <th>Target EQD2 (Gy)</th>
+                <th>Dose (Gy)</th>
             </thead>
             <tbody>
                 <tr>
-                    <td>Number of fractions:</td>
-                    <td><input type="number" class="form-control" id="fractions" value="35" oninput="calculateAllResults()"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>alpha/beta ratio:</td>
-                    <td><input type="number" class="form-control" id="alphaBeta" value="3.0" oninput="calculateAllResults()"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>High dose:</td>
-                    <td><input type="number" class="form-control" id="highDose" value="70" oninput="calculateHighDose()"></td>
+                    <td>High dose</td>
+                    <td><input type="number" class="form-control" id="highDose" value="66" oninput="calculateHighDose()"></td>
                     <td id="highDoseResult"></td>
                 </tr>
                 <tr>
-                    <td>Intermediate dose:</td>
-                    <td><input type="number" class="form-control" id="intermediateDose" value="63" oninput="calculateIntermediateDose()"></td>
+                    <td>Intermediate dose</td>
+                    <td><input type="number" class="form-control" id="intermediateDose" value="54" oninput="calculateIntermediateDose()"></td>
                     <td id="intermediateDoseResult"></td>
                 </tr>
                 <tr>
-                    <td>Low dose:</td>
-                    <td><input type="number" class="form-control" id="lowDose" value="56" oninput="calculateLowDose()"></td>
+                    <td>Low dose</td>
+                    <td><input type="number" class="form-control" id="lowDose" value="45" oninput="calculateLowDose()"></td>
                     <td id="lowDoseResult"></td>
                 </tr>
             </tbody>
         </table>
     </div>
+</div>
+
+<div class="container">
+    <p>This tool is designed to calculate what dose is required when you have a goal EQD2 in mind.</p>
 </div>
 
 <!-- Bootstrap JS (Optional, for Bootstrap components like modals, tooltips, etc.) -->
