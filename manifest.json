@@ -5,6 +5,7 @@
     "start_url": "./index.html",
     "display": "standalone",
     "scope": "/",
+    "theme_color": "lightcoral",
 
     "description": "A webapp for calculating dose required for a given EQD2."
-  }
+}
