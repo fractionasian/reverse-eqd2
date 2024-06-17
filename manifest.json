@@ -2,8 +2,8 @@
     "short_name": "Reverse EQD2",
     "name": "Reverse EQD2 Calculator",
 
-    "start_url": "https://fractionasian.github.io/reverse-eqd2/",
-    "display": "fullscreen",
+    "start_url": "./index.html",
+    "display": "standalone",
     "scope": "/",
 
     "description": "A webapp for calculating dose required for a given EQD2."
