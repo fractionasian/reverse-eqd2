@@ -7,7 +7,7 @@ self.addEventListener("install",e=>{
     );
   });
   
-  // Fatch resources
+  // Fetch resources
   self.addEventListener("fetch",e=>{
     e.respondWith(
       caches.match(e.request).then(response=>{
